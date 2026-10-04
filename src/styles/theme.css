@@ -1,0 +1,26 @@
+:root,
+[data-theme='light'] {
+  --page: #dfe5ec;
+  --bg: #eef2f6;
+  --surface: #ffffff;
+  --text: #14202b;
+  --muted: #5b6b7a;
+  --border: #d9e0e7;
+  --primary: #1746a2;
+  --primary-soft: #e3ebfa;
+  --credit: #12805c;
+  --debit: #c0362c;
+}
+
+[data-theme='dark'] {
+  --page: #080c12;
+  --bg: #0f1620;
+  --surface: #18222e;
+  --text: #e9eef3;
+  --muted: #94a3b2;
+  --border: #2a3644;
+  --primary: #5b8def;
+  --primary-soft: #1d2c44;
+  --credit: #3fcf98;
+  --debit: #ff7b70;
+}

@@ -1,0 +1,83 @@
+/* Shared styles for pages with forms */
+.title {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+}
+
+.subtitle {
+  margin: -8px 0 16px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.input {
+  padding: 12px;
+  color: var(--text);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  resize: vertical;
+}
+
+.input:focus {
+  outline: 2px solid var(--primary);
+  border-color: transparent;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--primary);
+}
+
+.found {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--credit);
+}
+
+.notFound {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--debit);
+}
+
+.muted {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.footer a {
+  color: var(--primary);
+  font-weight: 600;
+}

@@ -1,0 +1,26 @@
+.primary,
+.secondary {
+  width: 100%;
+  padding: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary {
+  color: #ffffff;
+  background-color: var(--primary);
+  border: none;
+}
+
+.secondary {
+  color: var(--text);
+  background-color: transparent;
+  border: 1px solid var(--border);
+}
+
+.primary:disabled,
+.secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
