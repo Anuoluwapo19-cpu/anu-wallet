@@ -1,0 +1,17 @@
+.success,
+.error {
+  padding: 12px 14px;
+  margin: 0 0 16px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.success {
+  color: var(--credit);
+  background-color: color-mix(in srgb, var(--credit) 12%, transparent);
+}
+
+.error {
+  color: var(--debit);
+  background-color: color-mix(in srgb, var(--debit) 12%, transparent);
+}
