@@ -1,12 +1,17 @@
-import { useState, useEffect, useMemo } from 'react';
-import { AuthContext } from './AuthContext';
-import { supabase } from '../lib/supabase';
+import { useState, useEffect, useMemo } from "react";
+import { AuthContext } from "./AuthContext";
+import { isSupabaseConfigured, supabase } from "../lib/supabase";
 
 const AuthProvider = ({ children }) => {
   const [session, setSession] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    if (!isSupabaseConfigured) {
+      setLoading(false);
+      return;
+    }
+
     // 1. check if someone is already logged in
     supabase.auth.getSession().then(({ data }) => {
       setSession(data.session);
